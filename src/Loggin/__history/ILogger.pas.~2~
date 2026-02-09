@@ -1,0 +1,22 @@
+unit ILogger;
+
+interface
+
+//Importação de LogLevel
+uses
+  LogLevel
+
+type
+  ILogger = interface
+    ['{A1C8D9F1-7E5A-4D6F-9F5D-123456789ABC}']
+    procedure Log(ALevel: TLogLevel; const AMessage: string);
+    procedure Debug(const AMessage: string);
+    procedure Info(const AMessage: string);
+    procedure Warning(const AMessage: string);
+    procedure Error(const AMessage: string);
+    procedure Fatal(const AMessage: string);
+  end;
+
+implementation
+
+end.

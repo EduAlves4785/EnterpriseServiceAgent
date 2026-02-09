@@ -1,0 +1,16 @@
+unit LogLevel;
+
+interface
+
+ type
+    TLogLevel=(
+      llDebug,
+      llInfo,
+      llWarning,
+      llError,
+      llFatal
+    );
+
+implementation
+
+end.

@@ -1,0 +1,28 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Vcl.Themes,
+  Vcl.Styles,
+  ESA.Core in 'src\Core\ESA.Core.pas',
+  Logger in 'src\Loggin\Logger.pas' {$R *.res},
+  ESA.MainForm in 'src\UI\ESA.MainForm.pas' {MainForm};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+
+  Log('Aplicação iniciada');
+
+  Application.MainFormOnTaskbar := True;
+
+  Application.CreateForm(TMainForm, MainForm);
+  TStyleManager.TrySetStyle('Carbon');
+
+  try
+    Application.Run;
+  finally
+    Log('Aplicação finalizada');
+  end;
+end.

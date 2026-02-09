@@ -1,0 +1,63 @@
+unit ESA.Logger;
+
+interface
+
+uses
+  ILogger, LogLevel;
+
+type
+  TLogger= class(TInterfacedObject, ILoggerInt)
+    private
+      function LevelToString(ALevel:TLogLevel):string;
+    public
+        procedure Log(ALevel: TLogLevel; const AMessage: string);
+        procedure Debug(const AMessage: string);
+        procedure Info(const AMessage: string);
+        procedure Warning(const AMessage: string);
+        procedure Error(const AMessage: string);
+        procedure Fatal(const AMessage: string);
+  end;
+
+implementation
+
+uses
+  System.SysUtils, LogFileWriter;
+
+  procedure TLogger.Log(ALevel: TLogLevel; const AMessage: string);
+  var
+    Line:string;
+  begin
+    Line := Format(
+    '[%s] [%s] %s',
+    [DateTimeToStr(Now), LevelToString(ALevel), AMessage]
+    );
+
+    TLogFileWriter.WriteLine(Line);
+  end;
+
+  procedure TLogger.Debug(const AMessage: string);
+    begin
+      Log(llDebug, AMessage);
+    end;
+
+  procedure TLogger.Info(const AMessage: string);
+begin
+  Log(llInfo, AMessage);
+end;
+
+procedure TLogger.Warning(const AMessage: string);
+begin
+  Log(llWarning, AMessage);
+end;
+
+procedure TLogger.Error(const AMessage: string);
+begin
+  Log(llError, AMessage);
+end;
+
+procedure TLogger.Fatal(const AMessage: string);
+begin
+  Log(llFatal, AMessage);
+end;
+
+end.
