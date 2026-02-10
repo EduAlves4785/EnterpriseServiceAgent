@@ -1,0 +1,26 @@
+unit AppConfig;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.IniFiles;
+
+type
+  TDatabaseConfig=record
+    DriverID:string;
+    Server:string;
+    Port:Integer;
+    Database:string;
+    User:string;
+    Password:string;
+  end;
+
+  function GetDatabaseConfig:TDatabaseConfig;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

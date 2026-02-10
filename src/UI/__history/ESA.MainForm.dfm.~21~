@@ -1,0 +1,125 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Cursor = crHandPoint
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Enterprise Service Agent'
+  ClientHeight = 313
+  ClientWidth = 290
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Label1: TLabel
+    Left = 8
+    Top = 48
+    Width = 83
+    Height = 20
+    Caption = 'Rota da API'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 20
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Top = 112
+    Width = 164
+    Height = 20
+    Caption = 'Chamados abertos hoje'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = 20
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object txtRotaApi: TEdit
+    Left = 24
+    Top = 74
+    Width = 257
+    Height = 23
+    Enabled = False
+    ParentShowHint = False
+    ShowHint = False
+    TabOrder = 0
+  end
+  object lstChamados: TListView
+    Left = 24
+    Top = 138
+    Width = 257
+    Height = 167
+    Columns = <
+      item
+        Caption = 'N'#186' Chamado'
+      end
+      item
+        Caption = 'T'#237'tulo do chamado'
+      end>
+    GridLines = True
+    TabOrder = 1
+  end
+  object panelConfig: TPanel
+    Left = 0
+    Top = 0
+    Width = 290
+    Height = 25
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 2
+    StyleElements = [seFont, seClient]
+    object Label3: TLabel
+      Left = 0
+      Top = 1
+      Width = 48
+      Height = 20
+      Caption = 'Status:'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object txtStatus: TLabel
+      Left = 54
+      Top = 1
+      Width = 46
+      Height = 20
+      Caption = 'Parado'
+      Color = clRed
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clCrimson
+      Font.Height = -15
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentColor = False
+      ParentFont = False
+    end
+    object Button1: TButton
+      Left = 258
+      Top = 0
+      Width = 32
+      Height = 25
+      Cursor = crHandPoint
+      Hint = 'Configura'#231#245'es'
+      Align = alRight
+      Caption = #9881
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 0
+    end
+  end
+end

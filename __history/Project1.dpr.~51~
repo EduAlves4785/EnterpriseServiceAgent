@@ -1,0 +1,36 @@
+program Project1;
+
+uses
+  Vcl.Forms,
+  Vcl.Themes,
+  Vcl.Styles,
+  ESA.Core in 'src\Core\ESA.Core.pas',
+  Logger in 'src\Loggin\Logger.pas',
+  ESA.MainForm in 'src\UI\ESA.MainForm.pas' {MainForm},
+  DBConnection in 'src\Core\Database\DBConnection.pas' {TDBConnection};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  try
+    Log('Iniciando aplicação...');
+
+    Application.MainFormOnTaskbar := True;
+    TStyleManager.TrySetStyle('Carbon');
+
+    Application.CreateForm(TDBConnection, DataBaseConnection);
+    DataBaseConnection.Connect;
+
+    Application.CreateForm(TMainForm, MainForm);
+    Application.Run;
+
+    Log('Aplicação iniciada');
+
+  finally
+    Log('Aplicação finalizada');
+
+    DataBaseConnection.Disconnect;
+    DataBaseConnection.Free;
+  end;
+end.

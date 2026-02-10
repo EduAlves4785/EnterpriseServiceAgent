@@ -1,0 +1,47 @@
+unit AppConfig;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.IniFiles;
+
+type
+  TDatabaseConfig=record
+    DriverID:string;
+    Server:string;
+    Port:Integer;
+    Database:string;
+    User:string;
+    Password:string;
+  end;
+
+  function GetDatabaseConfig:TDatabaseConfig;
+
+implementation
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+{$R *.dfm}
+
+function getIniFilePath:string;
+begin
+  Result:=ExtractFilePath(ParamStr(0))+'app.ini';
+end;
+
+function GetDatabaseConfig:TDatabaseConfig;
+var
+  Ini:TIniFile;
+begin
+  Ini:=TIniFile.Create(getIniFilePath);
+   try
+    Result.DriverID  := Ini.ReadString('Database', 'DriverID', '');
+    Result.Server    := Ini.ReadString('Database', 'Server', '');
+    Result.Port      := Ini.ReadInteger('Database', 'Port');
+    Result.Database  := Ini.ReadString('Database', 'Database', '');
+    Result.User      := Ini.ReadString('Database', 'User', '');
+    Result.Password  := Ini.ReadString('Database', 'Password', '');
+  finally
+    Ini.Free;
+  end;
+end;
+
+
+end.

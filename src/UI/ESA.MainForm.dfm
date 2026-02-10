@@ -13,6 +13,7 @@ object MainForm: TMainForm
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnCreate = FormCreate
   TextHeight = 15
   object Label1: TLabel
     Left = 8
@@ -74,7 +75,6 @@ object MainForm: TMainForm
     BevelOuter = bvNone
     TabOrder = 2
     StyleElements = [seFont, seClient]
-    ExplicitWidth = 336
     object Label3: TLabel
       Left = 0
       Top = 1
@@ -121,7 +121,6 @@ object MainForm: TMainForm
       ParentShowHint = False
       ShowHint = True
       TabOrder = 0
-      ExplicitLeft = 304
     end
   end
 end

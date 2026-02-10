@@ -5,24 +5,35 @@ uses
   Vcl.Themes,
   Vcl.Styles,
   ESA.Core in 'src\Core\ESA.Core.pas',
-  Logger in 'src\Loggin\Logger.pas' {$R *.res},
-  ESA.MainForm in 'src\UI\ESA.MainForm.pas' {MainForm};
+  Logger in 'src\Loggin\Logger.pas',
+  ESA.MainForm in 'src\UI\ESA.MainForm.pas' {MainForm},
+  DBConnection in 'src\Core\Database\DBConnection.pas' {TDBConnection},
+  AppConfig in 'src\Config\AppConfig.pas';
 
 {$R *.res}
 
 begin
   Application.Initialize;
-
-  Log('Aplicação iniciada');
-
-  Application.MainFormOnTaskbar := True;
-
-  Application.CreateForm(TMainForm, MainForm);
-  TStyleManager.TrySetStyle('Carbon');
-
   try
+    Log('Iniciando aplicação...');
+
+    Application.MainFormOnTaskbar := True;
+    TStyleManager.TrySetStyle('Carbon');
+
+    Application.CreateForm(TDBConnection, DataBaseConnection);
+    DataBaseConnection.Connect;
+
+    Application.CreateForm(TMainForm, MainForm);
+
+    Log('Aplicação iniciada');
     Application.Run;
+
+
+
   finally
     Log('Aplicação finalizada');
+
+    DataBaseConnection.Disconnect;
+    DataBaseConnection.Free;
   end;
 end.

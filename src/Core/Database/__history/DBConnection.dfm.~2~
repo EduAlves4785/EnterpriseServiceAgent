@@ -1,0 +1,4 @@
+object DBConnection: TDBConnection
+  Height = 240
+  Width = 405
+end
