@@ -24,6 +24,7 @@ type
   public
     procedure Connect;
     procedure Disconnect;
+    property Connection: TFDConnection read FDConnection;
   end;
 
 var

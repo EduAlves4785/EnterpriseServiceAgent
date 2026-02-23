@@ -1,0 +1,52 @@
+unit ApiClient;
+
+interface
+
+type
+  TApiClient=class
+  public
+    class procedure SendOpenIncident(const AService:string);
+    class procedure SendCloseIncident(const AService:string);
+  end;
+
+implementation
+
+uses
+  System.Net.HttpClient,
+  System.Net.URLClient,
+  System.SysUtils,
+  System.Net.HttpClientComponent,
+  AppConfig,
+  Logger;
+
+class procedure TApiClient.SendOpenIncident(const AService: string);
+var
+  Http: TNetHTTPClient;
+  Cfg:TApiConfig;
+  Json:string;
+
+begin
+  Cfg:=GetAPIConfig;
+
+   Json :=
+  '{' +
+  '"description":"O serviço '+AService+' está parado.",' +
+  '"subject":"Alerta de monitoramento ESA - Serviço parado - '+AService+'",' +
+  '"email":"tom@outerspace.com",' +
+  '"priority":1,' +
+  '"status":2,' +
+  '"cc_emails":[' +
+      '"ram@freshdesk.com",' +
+      '"diana@freshdesk.com"' +
+  '],' +
+  '"type":"Incidente",' +
+  '"group_id":67000202747,' +
+  '"custom_fields":{' +
+      '"cf_produto1":"ESA"' +
+  '}' +
+  '}';
+
+end;
+
+
+end.

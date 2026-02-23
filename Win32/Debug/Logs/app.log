@@ -1,87 +1,767 @@
-2026-02-04 15:27:35 [INFO] Aplicação iniciada
-2026-02-10 09:09:17 [INFO] Aplicação iniciada
-2026-02-10 09:09:29 [INFO] Aplicação iniciada
-2026-02-10 14:04:56 [INFO] Aplicação iniciada
-2026-02-10 14:09:42 [INFO] Iniciando aplicação...
-2026-02-10 14:09:42 [INFO] Iniciando conexão com banco de dados
-2026-02-10 14:09:43 [INFO] Aplicação finalizada
-2026-02-10 14:11:21 [INFO] Iniciando aplicação...
-2026-02-10 14:11:21 [INFO] Iniciando conexão com banco de dados
-2026-02-10 14:11:22 [INFO] Aplicação finalizada
-2026-02-10 15:43:35 [INFO] Iniciando aplicação...
-2026-02-10 15:43:35 [INFO] Iniciando conexão com banco de dados
-2026-02-10 15:43:36 [INFO] Aplicação finalizada
-2026-02-10 15:43:53 [INFO] Iniciando aplicação...
-2026-02-10 15:43:53 [INFO] Iniciando conexão com banco de dados
-2026-02-10 15:43:54 [INFO] Aplicação finalizada
-2026-02-10 15:44:28 [INFO] Iniciando aplicação...
-2026-02-10 15:44:28 [INFO] Iniciando conexão com banco de dados
-2026-02-10 15:44:29 [INFO] Aplicação finalizada
-2026-02-10 16:11:01 [INFO] Iniciando aplicação...
-2026-02-10 16:11:01 [INFO] Iniciando conexão com banco de dados
-2026-02-10 16:11:02 [INFO] Aplicação finalizada
-2026-02-10 16:15:58 [INFO] Iniciando aplicação...
-2026-02-10 16:15:58 [INFO] Iniciando conexão com banco de dados
-2026-02-10 16:15:59 [INFO] Aplicação finalizada
-2026-02-10 16:16:21 [INFO] Iniciando aplicação...
-2026-02-10 16:16:21 [INFO] Iniciando conexão com banco de dados
-2026-02-10 16:16:25 [INFO] Aplicação iniciada
-2026-02-10 16:16:25 [INFO] Aplicação finalizada
-2026-02-10 16:16:48 [INFO] Iniciando aplicação...
-2026-02-10 16:16:48 [INFO] Iniciando conexão com banco de dados
-2026-02-10 16:17:03 [INFO] Aplicação iniciada
-2026-02-10 16:17:03 [INFO] Aplicação finalizada
-2026-02-10 16:17:06 [INFO] Iniciando aplicação...
-2026-02-10 16:17:06 [INFO] Iniciando conexão com banco de dados
-2026-02-10 16:17:06 [INFO] Aplicação iniciada
-2026-02-10 16:44:55 [INFO] Aplicação finalizada
-2026-02-10 17:02:49 [INFO] Iniciando aplicação...
-2026-02-10 17:02:49 [INFO] Realizando leitura da ini: 
-2026-02-10 17:02:49 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:02:49 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:02:49 [INFO] Aplicação iniciada
-2026-02-10 17:04:40 [INFO] Aplicação finalizada
-2026-02-10 17:06:04 [INFO] Iniciando aplicação...
-2026-02-10 17:06:04 [INFO] Realizando leitura da ini: 
-2026-02-10 17:06:04 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:06:04 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:06:04 [INFO] Aplicação iniciada
-2026-02-10 17:06:35 [INFO] Aplicação finalizada
-2026-02-10 17:06:42 [INFO] Iniciando aplicação...
-2026-02-10 17:06:42 [INFO] Realizando leitura da ini: 
-2026-02-10 17:06:42 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:06:42 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:06:42 [INFO] Aplicação iniciada
-2026-02-10 17:20:02 [INFO] Iniciando aplicação...
-2026-02-10 17:20:02 [INFO] Realizando leitura da ini: 
-2026-02-10 17:20:02 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:20:02 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:20:02 [INFO] Aplicação iniciada
-2026-02-10 17:20:03 [INFO] Aplicação finalizada
-2026-02-10 17:21:27 [INFO] Aplicação finalizada
-2026-02-10 17:41:33 [INFO] Iniciando aplicação...
-2026-02-10 17:41:34 [INFO] Realizando leitura da ini: 
-2026-02-10 17:41:34 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:41:34 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:41:34 [INFO] Aplicação iniciada
-2026-02-10 17:41:37 [INFO] Aplicação finalizada
-2026-02-10 17:43:22 [INFO] Iniciando aplicação...
-2026-02-10 17:43:23 [INFO] Realizando leitura da ini: 
-2026-02-10 17:43:23 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:43:23 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:43:23 [INFO] Aplicação iniciada
-2026-02-10 17:43:25 [INFO] Aplicação finalizada
-2026-02-10 17:45:15 [INFO] Iniciando aplicação...
-2026-02-10 17:45:15 [INFO] Realizando leitura da ini: 
-2026-02-10 17:45:15 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:45:15 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:45:15 [INFO] Realizando leitura da ini: 
-2026-02-10 17:45:15 [INFO] Aplicação iniciada
-2026-02-10 17:46:22 [INFO] Aplicação finalizada
-2026-02-10 17:46:26 [INFO] Iniciando aplicação...
-2026-02-10 17:46:26 [INFO] Realizando leitura da ini: 
-2026-02-10 17:46:26 [INFO] Database configurado: esadb em localhost:5432
-2026-02-10 17:46:26 [INFO] Iniciando conexão com banco de dados
-2026-02-10 17:46:26 [INFO] Realizando leitura da ini: 
-2026-02-10 17:46:26 [INFO] Aplicação iniciada
-2026-02-10 17:59:06 [INFO] Aplicação finalizada
+2026-02-16 15:35:30 [INFO] Iniciando aplicação...
+2026-02-16 15:35:30 [INFO] Realizando leitura da ini: 
+2026-02-16 15:35:30 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:35:30 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:35:30 [INFO] Realizando leitura da ini: 
+2026-02-16 15:35:30 [INFO] Aplicação iniciada
+2026-02-16 15:35:48 [INFO] Status do monitoramento: Ativo
+2026-02-16 15:35:50 [INFO] Status do monitoramento: Parado
+2026-02-16 15:35:58 [INFO] Status do monitoramento: Parado
+2026-02-16 15:35:58 [INFO] Aplicação finalizada
+2026-02-16 15:36:14 [INFO] Iniciando aplicação...
+2026-02-16 15:36:14 [INFO] Realizando leitura da ini: 
+2026-02-16 15:36:14 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:36:14 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:36:15 [INFO] Realizando leitura da ini: 
+2026-02-16 15:36:15 [INFO] Aplicação iniciada
+2026-02-16 15:36:15 [INFO] Status do monitoramento: Parado
+2026-02-16 15:36:22 [INFO] Status do monitoramento: Ativo
+2026-02-16 15:36:27 [INFO] Status do monitoramento: Parado
+2026-02-16 15:36:34 [INFO] Aplicação finalizada
+2026-02-16 15:37:33 [INFO] Iniciando aplicação...
+2026-02-16 15:37:33 [INFO] Realizando leitura da ini: 
+2026-02-16 15:37:33 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:37:33 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:37:35 [INFO] Realizando leitura da ini: 
+2026-02-16 15:37:35 [INFO] Aplicação iniciada
+2026-02-16 15:37:35 [INFO] Status do monitoramento: Parado
+2026-02-16 15:37:49 [INFO] Aplicação finalizada
+2026-02-16 15:44:30 [INFO] Iniciando aplicação...
+2026-02-16 15:44:30 [INFO] Realizando leitura da ini: 
+2026-02-16 15:44:30 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:44:30 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:44:32 [INFO] Realizando leitura da ini: 
+2026-02-16 15:44:32 [INFO] Aplicação iniciada
+2026-02-16 15:44:32 [INFO] Status do monitoramento: Parado
+2026-02-16 15:44:37 [INFO] Aplicação finalizada
+2026-02-16 15:44:46 [INFO] Iniciando aplicação...
+2026-02-16 15:44:46 [INFO] Realizando leitura da ini: 
+2026-02-16 15:44:46 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:44:46 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:44:46 [INFO] Realizando leitura da ini: 
+2026-02-16 15:44:46 [INFO] Aplicação iniciada
+2026-02-16 15:44:46 [INFO] Status do monitoramento: Parado
+2026-02-16 15:47:49 [INFO] Aplicação finalizada
+2026-02-16 15:47:52 [INFO] Iniciando aplicação...
+2026-02-16 15:47:52 [INFO] Realizando leitura da ini: 
+2026-02-16 15:47:52 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:47:52 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:47:52 [INFO] Realizando leitura da ini: 
+2026-02-16 15:47:52 [INFO] Aplicação iniciada
+2026-02-16 15:47:52 [INFO] Status do monitoramento: Parado
+2026-02-16 15:48:38 [INFO] Aplicação finalizada
+2026-02-16 15:49:12 [INFO] Iniciando aplicação...
+2026-02-16 15:49:12 [INFO] Realizando leitura da ini: 
+2026-02-16 15:49:12 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 15:49:12 [INFO] Iniciando conexão com banco de dados
+2026-02-16 15:49:12 [INFO] Realizando leitura da ini: 
+2026-02-16 15:49:12 [INFO] Aplicação iniciada
+2026-02-16 15:49:12 [INFO] Status do monitoramento: Parado
+2026-02-16 16:27:01 [INFO] Iniciando aplicação...
+2026-02-16 16:27:01 [INFO] Realizando leitura da ini: 
+2026-02-16 16:27:01 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 16:27:01 [INFO] Iniciando conexão com banco de dados
+2026-02-16 16:27:01 [INFO] Realizando leitura da ini: 
+2026-02-16 16:27:01 [INFO] Aplicação iniciada
+2026-02-16 16:27:01 [INFO] Status do monitoramento: Parado
+2026-02-16 16:29:05 [INFO] Aplicação finalizada
+2026-02-16 16:29:15 [INFO] Iniciando aplicação...
+2026-02-16 16:29:15 [INFO] Realizando leitura da ini: 
+2026-02-16 16:29:15 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 16:29:15 [INFO] Iniciando conexão com banco de dados
+2026-02-16 16:29:15 [INFO] Realizando leitura da ini: 
+2026-02-16 16:29:15 [INFO] Aplicação iniciada
+2026-02-16 16:29:15 [INFO] Status do monitoramento: Parado
+2026-02-16 16:38:23 [INFO] Aplicação finalizada
+2026-02-16 16:38:27 [INFO] Iniciando aplicação...
+2026-02-16 16:38:27 [INFO] Realizando leitura da ini: 
+2026-02-16 16:38:27 [INFO] Database configurado: esadb em localhost:5432
+2026-02-16 16:38:27 [INFO] Iniciando conexão com banco de dados
+2026-02-16 16:38:27 [INFO] Realizando leitura da ini: 
+2026-02-16 16:38:27 [INFO] Aplicação iniciada
+2026-02-16 16:38:27 [INFO] Status do monitoramento: Parado
+2026-02-16 18:19:24 [INFO] Aplicação finalizada
+2026-02-19 17:13:29 [INFO] Iniciando aplicação...
+2026-02-19 17:13:29 [INFO] Realizando leitura da ini: 
+2026-02-19 17:13:29 [INFO] Database configurado: esadb em localhost:5432
+2026-02-19 17:13:29 [INFO] Iniciando conexão com banco de dados
+2026-02-19 17:13:32 [INFO] Realizando leitura da ini: 
+2026-02-19 17:13:32 [INFO] Aplicação iniciada
+2026-02-19 17:13:32 [INFO] Status do monitoramento: Parado
+2026-02-19 17:22:27 [INFO] Aplicação finalizada
+2026-02-19 17:22:44 [INFO] Iniciando aplicação...
+2026-02-19 17:22:44 [INFO] Realizando leitura da ini: 
+2026-02-19 17:22:44 [INFO] Database configurado: esadb em localhost:5432
+2026-02-19 17:22:44 [INFO] Iniciando conexão com banco de dados
+2026-02-19 17:22:44 [INFO] Realizando leitura da ini: 
+2026-02-19 17:22:44 [INFO] Aplicação iniciada
+2026-02-19 17:22:44 [INFO] Status do monitoramento: Parado
+2026-02-23 11:05:21 [INFO] Iniciando aplicação...
+2026-02-23 11:05:21 [INFO] Realizando leitura da ini: 
+2026-02-23 11:05:21 [INFO] Database configurado: esadb em localhost:5432
+2026-02-23 11:05:21 [INFO] Iniciando conexão com banco de dados
+2026-02-23 11:05:23 [INFO] Realizando leitura da ini: 
+2026-02-23 11:05:23 [INFO] Aplicação iniciada
+2026-02-23 11:05:23 [INFO] Status do monitoramento: Parado
+2026-02-23 11:13:28 [INFO] Aplicação finalizada
+2026-02-23 11:13:39 [INFO] Iniciando aplicação...
+2026-02-23 11:13:39 [INFO] Realizando leitura da ini: 
+2026-02-23 11:13:39 [INFO] Database configurado: esadb em localhost:5432
+2026-02-23 11:13:39 [INFO] Iniciando conexão com banco de dados
+2026-02-23 11:13:39 [INFO] Realizando leitura da ini: 
+2026-02-23 11:13:39 [INFO] Aplicação iniciada
+2026-02-23 11:13:39 [INFO] Status do monitoramento: Parado
+2026-02-23 11:13:41 [INFO] Realizando leitura da ini: 
+2026-02-23 11:17:50 [INFO] Aplicação finalizada
+2026-02-23 11:17:55 [INFO] Iniciando aplicação...
+2026-02-23 11:17:55 [INFO] Realizando leitura da ini: 
+2026-02-23 11:17:55 [INFO] Database configurado: esadb em localhost:5432
+2026-02-23 11:17:55 [INFO] Iniciando conexão com banco de dados
+2026-02-23 11:17:55 [INFO] Realizando leitura da ini: 
+2026-02-23 11:17:55 [INFO] Aplicação iniciada
+2026-02-23 11:17:55 [INFO] Status do monitoramento: Parado
+2026-02-23 11:17:59 [INFO] Realizando leitura da ini: 
+2026-02-23 11:18:21 [INFO] Status do monitoramento: Ativo
+2026-02-23 11:18:22 [INFO] Status do monitoramento: Parado
+2026-02-23 11:18:29 [INFO] Aplicação finalizada
+2026-02-23 11:19:24 [INFO] Iniciando aplicação...
+2026-02-23 11:19:24 [INFO] Realizando leitura da ini: 
+2026-02-23 11:19:24 [INFO] Database configurado: esadb em localhost:5432
+2026-02-23 11:19:24 [INFO] Iniciando conexão com banco de dados
+2026-02-23 11:19:24 [INFO] Realizando leitura da ini: 
+2026-02-23 11:19:24 [INFO] Aplicação iniciada
+2026-02-23 11:19:24 [INFO] Status do monitoramento: Parado
+2026-02-23 11:19:25 [INFO] Realizando leitura da ini: 
+2026-02-23 11:19:33 [INFO] Aplicação finalizada
+2026-02-23 11:23:35 [INFO] Iniciando aplicação...
+2026-02-23 11:23:35 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:23:35 [INFO] Realizando leitura da ini (Banco de dados): 
+2026-02-23 11:23:35 [INFO] Database configurado: esadb em localhost:5432
+2026-02-23 11:23:35 [INFO] Iniciando conexão com banco de dados
+2026-02-23 11:23:36 [INFO] Realizando leitura da ini (Configurações da API): 
+2026-02-23 11:23:36 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:23:36 [INFO] Aplicação iniciada
+2026-02-23 11:23:36 [INFO] Status do monitoramento: Parado
+2026-02-23 11:23:53 [INFO] Realizando leitura da ini (Configurações da API): 
+2026-02-23 11:23:53 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:13 [INFO] Aplicação finalizada
+2026-02-23 11:26:21 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:26:21 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:08 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:12 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:14 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:22 [INFO] Realizando alteração da INI (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:27:47 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:44 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:28:45 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:47 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:29:49 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:53 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:34:54 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:42 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:42 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:42 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:42 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:42 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:43 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:43 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:43 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:35:46 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:36:44 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:23 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:24 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:26 [INFO] Realizando alteração da INI (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:39:32 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:40:15 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:46:43 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] - - - - - - - - - - - - - - - - - - - - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 11:59:59 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:00:00 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:00:22 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:03 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:03 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:03 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:03 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:04 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:04 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:04 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:57:05 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:13 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:16 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 12:59:18 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:01:41 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:29 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:33 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:33 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:33 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:33 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:34 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:34 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:34 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:02:42 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:24 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:33 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:06:34 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:47 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:51 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:07:52 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:17 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:21 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:21 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:21 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:21 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:22 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:22 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:22 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 13:10:23 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 14:17:44 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:32 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:32 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:32 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:32 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:33 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:33 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:33 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:05:36 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:06:56 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:01 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:01 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:01 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:01 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:02 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:02 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:02 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:04 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:34 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:46 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:07:49 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:25 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:28 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:28 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:28 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:28 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:29 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:29 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:29 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:08:31 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:09:04 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:10:54 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:11:58 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:01 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:12:04 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:07 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:11 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:13:14 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:33:43 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:00 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:02 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:34:25 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:42:54 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:43:56 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:00 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:00 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:00 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:00 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:01 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:01 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:01 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:44:02 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:52:51 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:55:01 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:55:02 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 15:57:51 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:23:48 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:06 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:06 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:06 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:06 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:07 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:07 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:07 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:09 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:20 [ERROR] Serviço não encontrado: postgresql
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:20 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:20 [ERROR] Serviço não encontrado: Zabbix Server
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:29 [ERROR] Serviço não encontrado: postgresql
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:29 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:29 [ERROR] Serviço não encontrado: Zabbix Server
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:39 [ERROR] Serviço não encontrado: postgresql
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:39 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:39 [ERROR] Serviço não encontrado: Zabbix Server
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:49 [ERROR] Serviço não encontrado: postgresql
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:49 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:49 [ERROR] Serviço não encontrado: Zabbix Server
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:30:59 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:31:23 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:31:57 [INFO] Realizando alteração da INI (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:07 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:17 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:27 [INFO] Serviço parado: FirebirdGuardianDefaultInstance
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:27 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:37 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 16:32:42 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:39 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:44 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:44 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:44 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:44 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:45 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:45 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:45 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:50:51 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:08 [INFO] Realizando alteração da INI (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:11 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:21 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:24 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:24 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:31 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:32 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:32 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:41 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:41 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:41 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:51 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:51 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:51:51 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:01 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:01 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:02 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:04 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:16 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:52:36 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:46 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:46 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:46 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:46 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:47 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:47 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:47 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:54:49 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:00 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:03 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:03 [INFO] Serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:09 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:09 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:19 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:20 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:55:27 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:33 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Iniciando aplicação...
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Realizando leitura da ini (Banco de dados): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Database configurado: esadb em localhost:5432
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Iniciando conexão com banco de dados
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Aplicação iniciada
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:37 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 17:59:40 [INFO] Status do monitoramento: Ativo
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:20 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:22 [INFO] Chamado aberto enviado para API: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:22 [INFO] Chamado aberto para serviço parado: wuauserv
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:34 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:50 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:51 [INFO] Chamado aberto enviado para API: FirebirdGuardianDefaultInstance
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:00:51 [INFO] Chamado aberto para serviço parado: FirebirdGuardianDefaultInstance
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:01:10 [INFO] Realizando leitura da ini (Configurações da API): 
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:01:11 [INFO] Chamado encerrado enviado para API: FirebirdGuardianDefaultInstance
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:01:11 [INFO] Chamado encerrado para serviço normalizado: FirebirdGuardianDefaultInstance
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:01:47 [INFO] Status do monitoramento: Parado
+- - - - - - - - - - - - - - - - - - - - - - - -
+2026-02-23 18:01:52 [INFO] Aplicação finalizada
+- - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,84 @@
+unit IncidentRepository;
+
+interface
+
+type TIncidentRepository=class
+     public
+       class function HasOpenIncident(const AService:string):Boolean;
+       class procedure OpenIncident(const AService:string);
+       class procedure CloseIncident(const AService:string);
+end;
+
+implementation
+
+uses
+  FireDAC.Comp.Client,
+  FireDAC.DApt,
+  System.SysUtils,
+  DBConnection;
+
+  { TIncidentRepository }
+
+class function TIncidentRepository.HasOpenIncident(const AService: string): Boolean;
+var
+  Qry: TFDQuery;
+begin
+  Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection := DataBaseConnection.Connection;
+
+    Qry.SQL.Text :=
+      'SELECT COUNT(*) AS total ' +
+      'FROM incidentes ' +
+      'WHERE nm_servico = :srv ' +
+      'AND status = :status';
+
+    Qry.ParamByName('srv').AsString := AService;
+    Qry.ParamByName('status').AsString := 'ABERTO';
+
+    Qry.Open;
+
+    Result := Qry.FieldByName('total').AsInteger > 0;
+  finally
+    Qry.Free;
+  end;
+end;
+
+class procedure TIncidentRepository.OpenIncident(const AService: string);
+var
+  Qry: TFDQuery;
+begin
+  Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection := DataBaseConnection.Connection;
+    Qry.SQL.Text :=
+      'INSERT INTO incidentes (nm_servico, status, dt_abertura) ' +
+      'VALUES (:srv, ''ABERTO'', NOW())';
+
+    Qry.ParamByName('srv').AsString := AService;
+    Qry.ExecSQL;
+  finally
+    Qry.Free;
+  end;
+end;
+
+class procedure TIncidentRepository.CloseIncident(const AService: string);
+var
+  Qry: TFDQuery;
+begin
+  Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection := DataBaseConnection.Connection;
+    Qry.SQL.Text :=
+      'UPDATE incidentes SET status = ''FECHADO'', dt_fechamento = NOW() ' +
+      'WHERE nm_servico = :srv AND status = ''ABERTO''';
+
+    Qry.ParamByName('srv').AsString := AService;
+    Qry.ExecSQL;
+  finally
+    Qry.Free;
+  end;
+end;
+
+
+end.

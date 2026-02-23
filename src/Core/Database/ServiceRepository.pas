@@ -1,0 +1,87 @@
+unit ServiceRepository;
+
+interface
+
+uses
+  System.SysUtils,
+  System.Generics.Collections;
+
+type
+  TServiceRepository = class
+  public
+    class procedure AddService(const AServiceName: string);
+    class procedure DeleteService(const AServiceName:string);
+    class function GetAllServices: TList<string>;
+  end;
+
+implementation
+
+uses
+  FireDAC.Comp.Client,
+  DBConnection;
+
+{ TServiceRepository }
+
+class procedure TServiceRepository.AddService(const AServiceName: string);
+var
+  Qry: TFDQuery;
+begin
+  Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection := DataBaseConnection.FDConnection;
+
+    Qry.SQL.Text :=
+      'INSERT INTO servicos_monitora (nm_servico) VALUES (:nome)';
+
+    Qry.ParamByName('nome').AsString := AServiceName;
+
+    Qry.ExecSQL;
+  finally
+    Qry.Free;
+  end;
+end;
+
+class procedure TServiceRepository.DeleteService(const AServiceName: string);
+var
+  Qry:TFDQuery;
+begin
+ Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection:=DataBaseConnection.FDConnection;
+
+    Qry.sql.Text:='DELETE FROM servicos_monitora WHERE nm_servico=(:nome)';
+
+    Qry.ParamByName('nome').AsString:=AServiceName;
+
+    Qry.ExecSQL;
+  finally
+     Qry.Free;
+  end;
+end;
+
+class function TServiceRepository.GetAllServices: TList<string>;
+var
+  Qry: TFDQuery;
+begin
+  Result := TList<string>.Create;
+
+  Qry := TFDQuery.Create(nil);
+  try
+    Qry.Connection := DataBaseConnection.FDConnection;
+
+    Qry.SQL.Text :=
+      'SELECT nm_servico FROM servicos_monitora ORDER BY nm_servico';
+
+    Qry.Open;
+
+    while not Qry.Eof do
+    begin
+      Result.Add(Qry.FieldByName('nm_servico').AsString);
+      Qry.Next;
+    end;
+  finally
+    Qry.Free;
+  end;
+end;
+
+end.

@@ -1,0 +1,99 @@
+unit ApiClient;
+
+interface
+
+type
+  TApiClient=class
+  public
+    class procedure SendOpenIncident(const AService:string);
+    class procedure SendCloseIncident(const AService:string);
+  end;
+
+implementation
+
+uses
+  System.Net.HttpClient,
+  System.Net.URLClient,
+  System.Net.HttpClientComponent,
+  System.SysUtils,
+  System.Classes,
+  AppConfig,
+  Logger;
+
+class procedure TApiClient.SendOpenIncident(const AService: string);
+var
+  Http: TNetHTTPClient;
+  Cfg: TApiConfig;
+  Json: string;
+  Stream: TStringStream;
+  Response: IHTTPResponse;
+begin
+  Cfg := GetApiConfig;
+
+  Json :=
+    '{' +
+    '"service":"' + AService + '",' +
+    '"status":"OPEN"' +
+    '}';
+
+  Http := TNetHTTPClient.Create(nil);
+  try
+    Http.ContentType := 'application/json';
+
+    Stream := TStringStream.Create(Json, TEncoding.UTF8);
+    try
+      Response := Http.Post(Cfg.ApiRoute, Stream);
+
+      if Response.StatusCode >= 200 then
+        Log('Chamado aberto enviado para API: ' + AService)
+      else
+        Log('Erro API: ' + Response.StatusText);
+
+    finally
+      Stream.Free;
+    end;
+
+  finally
+    Http.Free;
+  end;
+end;
+
+class procedure TApiClient.SendCloseIncident(const AService: string);
+var
+  Http: TNetHTTPClient;
+  Cfg: TApiConfig;
+  Json: string;
+  Stream: TStringStream;
+  Response: IHTTPResponse;
+begin
+  Cfg := GetApiConfig;
+
+  Json :=
+    '{' +
+    '"service":"' + AService + '",' +
+    '"status":"CLOSED"' +
+    '}';
+
+  Http := TNetHTTPClient.Create(nil);
+  try
+    Http.ContentType := 'application/json';
+
+    Stream := TStringStream.Create(Json, TEncoding.UTF8);
+    try
+      Response := Http.Post(Cfg.ApiRoute, Stream);
+
+      if Response.StatusCode >= 200 then
+        Log('Chamado encerrado enviado para API: ' + AService)
+      else
+        Log('Erro API: ' + Response.StatusText);
+
+    finally
+      Stream.Free;
+    end;
+
+  finally
+    Http.Free;
+  end;
+end;
+
+end.

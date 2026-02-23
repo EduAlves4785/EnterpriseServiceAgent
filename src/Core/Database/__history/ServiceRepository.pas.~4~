@@ -1,0 +1,26 @@
+unit ServiceRepository;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.Generics.Collections;
+
+type
+  TServiceRepository = class
+  private
+    { Private declarations }
+  public
+    class procedure AddService(const AServiceName:string);
+    class function GetAllAServices:TList<string>;
+  end;
+
+var
+  DataModule3: TServiceRepository;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

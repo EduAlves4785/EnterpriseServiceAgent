@@ -42,6 +42,7 @@ begin
     Writeln(LogFile,
       FormatDateTime('yyyy-mm-dd hh:nn:ss', Now) +
       ' [' + Level + '] ' + Msg);
+    Writeln(LogFile,'- - - - - - - - - - - - - - - - - - - - - - - -');
   finally
     CloseFile(LogFile);
   end;

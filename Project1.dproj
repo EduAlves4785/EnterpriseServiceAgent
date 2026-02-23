@@ -147,6 +147,14 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
+        <DCCReference Include="src\UI\SettingsForm.pas">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\Core\Database\ServiceRepository.pas"/>
+        <DCCReference Include="src\Monitoring\ServiceMonitor.pas"/>
+        <DCCReference Include="src\Core\Database\IncidentRepository.pas"/>
+        <DCCReference Include="src\Api\ApiClient.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

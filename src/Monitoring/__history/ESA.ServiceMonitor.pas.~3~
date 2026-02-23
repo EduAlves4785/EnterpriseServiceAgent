@@ -1,0 +1,68 @@
+unit ESA.ServiceMonitor;
+
+interface
+
+type
+  TServiceMonitor=class
+  public
+    class procedure CheckServices;
+  end;
+
+implementation
+
+uses
+  Winapi.Windows,
+  Winapi.WinSvc,
+  System.SysUtils,
+  System.Generics.Collections,
+  ServiceRepository,
+  Logger;
+
+  {TServiceMonitor}
+
+class procedure TServiceMonitor.CheckServices;
+var
+  Services:TList<string>;
+  ServiceName:string;
+  SCM,Svc:SC_HANDLE;
+  Status:TServiceStatus;
+
+  begin
+    Services:=TServiceRepository.GetAllServices;
+    try
+      SCM:=OpenSCManager(nil,nil,SC_MANAGER_CONNECT);
+      if SCM=0 then
+        Exit;
+
+    try
+
+      for ServiceName in Services do
+        begin
+           Svc:=OpenService(SCM,PChar(ServiceName),SERVICE_QUERY_STATUS);
+           if Svc = 0 then
+           begin
+             LogError('Serviço não encontrado: '+ServiceName);
+             Continue;
+           end;
+
+           try
+             if QueryServiceStatus(Svc,Status) then
+             begin
+               if Status.dwCurrentState <> SERVICE_RUNNING then
+                Log('Serviço parado: '+ServiceName);
+             end;
+           finally
+              CloseServiceHandle(Svc);
+           end;
+           
+        end;
+
+    finally
+        CloseServiceHandle(SCM);
+    end;
+    finally
+      Services.Free;
+    end;
+  end;
+
+end.

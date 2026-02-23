@@ -1,0 +1,25 @@
+unit ServiceRepository;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.Generics.Collections;
+
+type
+  TServiceRepository = class
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule3: TServiceRepository;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,126 @@
+unit SettingsForm;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, AppConfig, Vcl.StdCtrls, Vcl.ComCtrls,
+  Vcl.Buttons, ServiceRepository, System.Generics.Collections,FireDAC.DApt;
+
+type
+  TSettingsForm = class(TForm)
+    Label1: TLabel;
+    edtRotaApi: TEdit;
+    Label2: TLabel;
+    edtUsuarioApi: TEdit;
+    Label3: TLabel;
+    edtSenhaApi: TEdit;
+    Label4: TLabel;
+    btnSalvar: TButton;
+    btnCancelar: TButton;
+    Label5: TLabel;
+    txtNmServico: TEdit;
+    Label6: TLabel;
+    lstServicos: TListView;
+    btnAdicionar: TSpeedButton;
+    btnApagar: TSpeedButton;
+    procedure FormCreate(Sender: TObject);
+    procedure btnSalvarClick(Sender: TObject);
+    procedure btnAdicionarClick(Sender: TObject);
+    procedure LoadServices;
+    procedure btnApagarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form2: TSettingsForm;
+
+implementation
+
+{$R *.dfm}
+
+procedure TSettingsForm.btnAdicionarClick(Sender: TObject);
+begin
+  if Trim(txtNmServico.Text).IsEmpty then
+    Exit;
+
+  try
+    TServiceRepository.AddService(txtNmServico.Text);
+
+    ShowMessage('Serviço adicionado!');
+
+    LoadServices;
+  except
+    on E: Exception do
+      ShowMessage('Erro: ' + E.Message);
+
+  end;
+end;
+
+procedure TSettingsForm.LoadServices;
+var
+  Services: TList<System.string>;
+  Item: TListItem;
+  S: string;
+begin
+  lstServicos.Items.Clear;
+
+  Services := TServiceRepository.GetAllServices;
+  try
+    for S in Services do
+    begin
+      Item := lstServicos.Items.Add;
+      Item.Caption := S;
+    end;
+  finally
+    Services.Free;
+  end;
+end;
+
+procedure TSettingsForm.btnApagarClick(Sender: TObject);
+begin
+  TServiceRepository.DeleteService(lstServicos.Selected.Caption);
+
+  ShowMessage('Serviço deletado!');
+
+  LoadServices;
+end;
+
+procedure TSettingsForm.btnSalvarClick(Sender: TObject);
+var
+  CfgApi:TApiConfig;
+begin
+  CfgApi.ApiRoute:=edtRotaApi.Text;
+  CfgApi.ApiAuthUsername:=edtUsuarioApi.Text;
+  CfgApi.ApiAuthPass:=edtSenhaApi.Text;
+
+  SaveApiConfig(CfgApi);
+
+  if MessageDlg('Configuração salva!',
+                mtInformation,
+                [mbOk],
+                0) = mrOk then
+  begin
+    Close; // fecha a tela de configurações
+  end;
+end;
+
+procedure TSettingsForm.FormCreate(Sender: TObject);
+var
+  Cfg:TApiConfig;
+begin
+  Cfg:=GetAPIConfig;
+
+  edtRotaApi.Text:=Cfg.ApiRoute;
+  edtUsuarioApi.Text:=Cfg.ApiAuthUsername;
+  edtSenhaApi.Text:=Cfg.ApiAuthPass;
+
+  //Carregar lista de serviços monitorados
+  LoadServices;
+
+end;
+
+end.
