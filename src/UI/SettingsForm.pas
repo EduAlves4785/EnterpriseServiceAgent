@@ -104,7 +104,7 @@ begin
                 [mbOk],
                 0) = mrOk then
   begin
-    Close; // fecha a tela de configurações
+    ModalResult := mrOk; // fecha a tela de configurações
   end;
 end;
 

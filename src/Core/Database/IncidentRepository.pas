@@ -7,6 +7,7 @@ type TIncidentRepository=class
        class function HasOpenIncident(const AService:string):Boolean;
        class procedure OpenIncident(const AService:string);
        class procedure CloseIncident(const AService:string);
+       class function IcidentOpenToday():integer;
 end;
 
 implementation
@@ -15,7 +16,12 @@ uses
   FireDAC.Comp.Client,
   FireDAC.DApt,
   System.SysUtils,
-  DBConnection;
+  DBConnection,
+  AppConfig,
+  Logger;
+
+var
+  CfgEstacao:TEstacaoConfig;
 
   { TIncidentRepository }
 
@@ -52,9 +58,12 @@ begin
   try
     Qry.Connection := DataBaseConnection.Connection;
     Qry.SQL.Text :=
-      'INSERT INTO incidentes (nm_servico, status, dt_abertura) ' +
-      'VALUES (:srv, ''ABERTO'', NOW())';
+      'INSERT INTO incidentes (estacao, nm_servico, status, dt_abertura) ' +
+      'VALUES (:estacao,:srv, ''ABERTO'', NOW())';
 
+    CfgEstacao:=GetEstacaoConfig;
+    Log('Nome da estação: '+CfgEstacao.NomeEstacao);
+    Qry.ParamByName('estacao').AsString:=CfgEstacao.NomeEstacao;
     Qry.ParamByName('srv').AsString := AService;
     Qry.ExecSQL;
   finally
@@ -79,6 +88,25 @@ begin
     Qry.Free;
   end;
 end;
+
+
+class function TIncidentRepository.IcidentOpenToday: Integer;
+var
+  Qry:TFDQuery;
+begin
+  Qry:=TFDQuery.Create(nil);
+  try
+    Qry.Connection:=DataBaseConnection.Connection;
+    Qry.SQL.Text:=
+    'SELECT count(*) as total FROM incidentes WHERE DATE(dt_abertura) = CURRENT_DATE';
+    Qry.Open;
+
+     Result := Qry.FieldByName('total').AsInteger;
+  finally
+    Qry.Free;
+  end;
+end;
+
 
 
 end.

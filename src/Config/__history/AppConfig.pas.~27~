@@ -1,0 +1,99 @@
+unit AppConfig;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, System.IniFiles, Logger;
+
+type
+  TDatabaseConfig=record
+    DriverID:string;
+    Server:string;
+    Port:Integer;
+    Database:string;
+    User:string;
+    Password:string;
+  end;
+
+type
+  TApiConfig=record
+    ApiRoute:string;
+    ApiAuthUsername:string;
+    ApiAuthPass:string;
+  end;
+
+type
+  TEstacaoConfig=record
+    NomeEstacao:string;
+  end;
+
+  function GetDatabaseConfig:TDatabaseConfig;
+  function  GetAPIConfig:TApiConfig;
+  procedure SaveApiConfig(const Cfg:TApiConfig);
+  function GetEstacaoConfig:TEstacaoConfig;
+
+var
+  Ini:TIniFile;
+
+implementation
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+{$R *.dfm}
+
+function getIniFilePath:string;
+begin
+  Result:=ExtractFilePath(ParamStr(0))+'app.ini';
+end;
+
+function GetDatabaseConfig:TDatabaseConfig;
+begin
+  Ini:=TIniFile.Create(getIniFilePath);
+   try
+    Log('Realizando leitura da ini (Banco de dados): ');
+    Result.DriverID  := Ini.ReadString('Database', 'DriverID', '');
+    Result.Server    := Ini.ReadString('Database', 'Server', '');
+    Result.Port      := Ini.ReadInteger('Database', 'Port',0);
+    Result.Database  := Ini.ReadString('Database', 'Database', '');
+    Result.User      := Ini.ReadString('Database', 'User', '');
+    Result.Password  := Ini.ReadString('Database', 'Password', '');
+  finally
+    Ini.Free;
+  end;
+end;
+
+function GetAPIConfig:TApiConfig;
+begin
+  Ini:=TIniFile.Create(getIniFilePath);
+   try
+    Log('Realizando leitura da ini (Configurações da API): ');
+    Result.ApiRoute:=Ini.ReadString('API','Api_Route','');
+    Result.ApiAuthUsername:=Ini.ReadString('API','Api_Authorization_username','');
+    Result.ApiAuthPass:=Ini.ReadString('API','Api_Authorization_password','');
+  finally
+    Ini.Free;
+  end;
+end;
+
+procedure SaveApiConfig(const Cfg:TApiConfig);
+begin
+   Ini:=TIniFile.Create(getIniFilePath);
+   try
+     Log('Realizando alteração da INI (Configurações da API): ');
+     Ini.WriteString('API','Api_Route',Cfg.ApiRoute);
+     Ini.WriteString('API','Api_Authorization_username',Cfg.ApiAuthUsername);
+     Ini.WriteString('API','Api_Authorization_password',Cfg.ApiAuthPass);
+   finally
+     Ini.Free;
+   end;
+end;
+
+function GetEstacaoConfig:TEstacaoConfig;
+begin
+   Ini:=TIniFile.Create(getIniFilePath);
+   try
+     Log('Realizando alteração da INI (Configurações da estação): ');
+   finally
+
+   end;
+end;
+
+end.

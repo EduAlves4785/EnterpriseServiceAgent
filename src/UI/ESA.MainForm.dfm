@@ -4,7 +4,7 @@ object MainForm: TMainForm
   Cursor = crHandPoint
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
-  Caption = 'Enterprise Service Agent'
+  Caption = 'Enterprise Service Agent V1'
   ClientHeight = 98
   ClientWidth = 587
   Color = clBtnFace
@@ -66,7 +66,7 @@ object MainForm: TMainForm
         Font.Style = [fsBold]
         ParentFont = False
       end
-      object Label4: TLabel
+      object txtNumChamados: TLabel
         Left = 48
         Top = 31
         Width = 14

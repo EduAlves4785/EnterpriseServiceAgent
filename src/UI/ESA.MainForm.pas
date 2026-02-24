@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ComCtrls, Vcl.ExtCtrls, AppConfig,
-  Vcl.Buttons,Logger, Vcl.Menus, SettingsForm, ServiceMonitor;
+  Vcl.Buttons,Logger, Vcl.Menus, SettingsForm, ServiceMonitor, IncidentRepository;
 
 type
   TMainForm = class(TForm)
@@ -19,7 +19,7 @@ type
     panelAPI: TPanel;
     Panel1: TPanel;
     Label3: TLabel;
-    Label4: TLabel;
+    txtNumChamados: TLabel;
     TrayIcon: TTrayIcon;
     pmTray: TPopupMenu;
     miMostrar: TMenuItem;
@@ -34,6 +34,7 @@ type
     procedure FormResize(Sender: TObject);
     procedure Button1Click(Sender: TObject);
     procedure tmMonitorTimer(Sender: TObject);
+    procedure ReloadConfig;
   private
     { Private declarations }
   public
@@ -43,6 +44,7 @@ type
 var
   MainForm: TMainForm;
   Cfg: TApiConfig;
+  NumChamados:Integer;
 
 implementation
 
@@ -72,7 +74,10 @@ procedure TMainForm.Button1Click(Sender: TObject);
 begin
   with TSettingsForm.Create(Self) do
   try
-    ShowModal;
+    if ShowModal=mrOk then
+      begin
+        ReloadConfig;
+      end;
   finally
     Free;
   end;
@@ -90,7 +95,9 @@ end;
 procedure TMainForm.FormCreate(Sender: TObject);
 begin
     Cfg:=GetAPIConfig;
+    NumChamados:=TIncidentRepository.IcidentOpenToday;
     txtRotaApi.Text:=Cfg.ApiRoute;
+    txtNumChamados.Caption:= IntToStr(NumChamados);
 end;
 
 procedure TMainForm.FormDblClick(Sender: TObject);
@@ -120,6 +127,14 @@ begin
    Show;
   WindowState := wsNormal;
   TrayIcon.Visible := False;
+end;
+
+procedure TMainForm.ReloadConfig;
+begin
+    Cfg:=GetAPIConfig;
+    NumChamados:=TIncidentRepository.IcidentOpenToday;
+    txtRotaApi.Text:=Cfg.ApiRoute;
+    txtNumChamados.Caption:= IntToStr(NumChamados);
 end;
 
 procedure TMainForm.tmMonitorTimer(Sender: TObject);

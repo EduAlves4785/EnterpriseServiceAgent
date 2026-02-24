@@ -24,14 +24,17 @@ class procedure TApiClient.SendOpenIncident(const AService: string);
 var
   Http: TNetHTTPClient;
   Cfg: TApiConfig;
+  CfgEstacao:TEstacaoConfig;
   Json: string;
   Stream: TStringStream;
   Response: IHTTPResponse;
 begin
   Cfg := GetApiConfig;
+  CfgEstacao:=GetEstacaoConfig;
 
   Json :=
     '{' +
+    '"server_name:"'+ CfgEstacao.NomeEstacao+'",'+
     '"service":"' + AService + '",' +
     '"status":"OPEN"' +
     '}';
@@ -62,14 +65,17 @@ class procedure TApiClient.SendCloseIncident(const AService: string);
 var
   Http: TNetHTTPClient;
   Cfg: TApiConfig;
+  CfgEstacao:TEstacaoConfig;
   Json: string;
   Stream: TStringStream;
   Response: IHTTPResponse;
 begin
   Cfg := GetApiConfig;
+  CfgEstacao:=GetEstacaoConfig;
 
   Json :=
     '{' +
+    '"server_name:"'+ CfgEstacao.NomeEstacao+'",'+
     '"service":"' + AService + '",' +
     '"status":"CLOSED"' +
     '}';

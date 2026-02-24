@@ -14,11 +14,14 @@ uses
   Logger, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Error,
   FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Pool, FireDAC.VCLUI.Wait,
   Data.DB,
-  AppConfig;
+  AppConfig,
+  FireDAC.DApt,
+  FireDAC.Phys.PGWrapper;
 
 type
   TDBConnection = class(TDataModule)
     FDConnection: TFDConnection;
+    FDPhysPgDriverLink1: TFDPhysPgDriverLink;
   private
     { Private declarations }
   public
@@ -35,6 +38,7 @@ implementation
 procedure TDBConnection.Connect;
 var
   Cfg: TDatabaseConfig;
+  ExePath:string;
 begin
   if FDConnection.Connected then
     Exit;
@@ -45,9 +49,13 @@ begin
 
     Log('Iniciando conexão com banco de dados');
 
+    ExePath := IncludeTrailingPathDelimiter(ExtractFilePath(ParamStr(0)));
+    // Força usar libpq da pasta do EXE
+    FDPhysPgDriverLink1.VendorLib := ExePath + 'libpq.dll';
+
     FDConnection.Params.Clear;
 
-  FDConnection.Params.Add('DriverID='+Cfg.DriverID);
+  FDConnection.Params.DriverID := Cfg.DriverID;
   FDConnection.Params.Add('Server='+Cfg.Server);
   FDConnection.Params.Add('Port='+IntToStr(Cfg.Port));
   FDConnection.Params.Add('Database='+Cfg.Database);

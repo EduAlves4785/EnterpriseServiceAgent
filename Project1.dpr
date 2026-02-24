@@ -19,6 +19,10 @@ uses
 
 begin
   Application.Initialize;
+
+  //Valida se nome da estação está preenchido
+  EnsureEstacaoConfigurada;
+
   try
     Log('Iniciando aplicação...');
 
@@ -34,9 +38,6 @@ begin
     Log('Aplicação iniciada');
     Log('Status do monitoramento: Parado');
     Application.Run;
-
-
-
 
   finally
     Log('Aplicação finalizada');

@@ -1,0 +1,21 @@
+object DBConnection: TDBConnection
+  Height = 240
+  Width = 405
+  object FDConnection: TFDConnection
+    Params.Strings = (
+      'Database=esadb'
+      'User_Name=postgres'
+      'Password=postgres'
+      'DriverID=PG')
+    Connected = True
+    Left = 144
+    Top = 40
+  end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    VendorLib = 
+      'C:\Users\Medilab\Documents\Embarcadero\Studio\Projects\Enterpris' +
+      'eServiceAgent\Win64\Debug\libpq.dll'
+    Left = 272
+    Top = 128
+  end
+end

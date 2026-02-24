@@ -10,4 +10,8 @@ object DBConnection: TDBConnection
     Left = 144
     Top = 40
   end
+  object FDPhysPgDriverLink1: TFDPhysPgDriverLink
+    Left = 272
+    Top = 128
+  end
 end

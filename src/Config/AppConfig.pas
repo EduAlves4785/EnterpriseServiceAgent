@@ -3,7 +3,7 @@ unit AppConfig;
 interface
 
 uses
-  System.SysUtils, System.Classes, System.IniFiles, Logger;
+  System.SysUtils, System.Classes, System.IniFiles, Logger, Vcl.Dialogs;
 
 type
   TDatabaseConfig=record
@@ -22,9 +22,17 @@ type
     ApiAuthPass:string;
   end;
 
+type
+  TEstacaoConfig=record
+    NomeEstacao:string;
+  end;
+
   function GetDatabaseConfig:TDatabaseConfig;
   function  GetAPIConfig:TApiConfig;
   procedure SaveApiConfig(const Cfg:TApiConfig);
+  procedure SaveEstacaoConfig(const Cfg:TEstacaoConfig);
+  procedure EnsureEstacaoConfigurada;
+  function GetEstacaoConfig:TEstacaoConfig;
 
 implementation
 {%CLASSGROUP 'Vcl.Controls.TControl'}
@@ -83,5 +91,51 @@ begin
    end;
 end;
 
+procedure SaveEstacaoConfig(const Cfg:TEstacaoConfig);
+var
+  Ini:TIniFile;
+begin
+  Ini:=TIniFile.Create(getIniFilePath);
+  try
+    Log('Inserindo nome estação monitorada: '+Cfg.NomeEstacao);
+    Ini.WriteString('ESTACAO','Nome',Cfg.NomeEstacao);
+  finally
+
+  end;
+end;
+
+procedure EnsureEstacaoConfigurada;
+var
+  Cfg: TEstacaoConfig;
+  Nome: string;
+begin
+  Cfg := GetEstacaoConfig;
+
+  if Trim(Cfg.NomeEstacao) = '' then
+  begin
+    Nome := InputBox('Identificação da Estação',
+                     'Informe o nome desta estação:',
+                     '');
+
+    if Trim(Nome) = '' then
+      raise Exception.Create('Nome da estação é obrigatório.');
+
+    Cfg.NomeEstacao := Nome;
+    SaveEstacaoConfig(Cfg);
+  end;
+end;
+
+function GetEstacaoConfig:TEstacaoConfig;
+var
+  Ini:TIniFile;
+begin
+   Ini:=TIniFile.Create(getIniFilePath);
+   try
+     Log('Realizando alteração da INI (Configurações da estação): ');
+     Result.NomeEstacao  := Ini.ReadString('ESTACAO', 'Nome', '');
+   finally
+     Ini.Free;
+   end;
+end;
 
 end.
