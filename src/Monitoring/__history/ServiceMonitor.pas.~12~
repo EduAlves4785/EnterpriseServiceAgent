@@ -1,0 +1,94 @@
+unit ServiceMonitor;
+
+interface
+
+type
+  TServiceMonitor = class
+  public
+    class procedure CheckServices;
+  end;
+
+implementation
+
+uses
+  Winapi.Windows,
+  Winapi.WinSvc,
+  System.SysUtils,
+  System.Generics.Collections,
+  ServiceRepository,
+  ApiClient,
+  IncidentRepository,
+  Logger,
+  MainForm;
+
+{ TServiceMonitor }
+
+class procedure TServiceMonitor.CheckServices;
+var
+  Services: TList<string>;
+  ServiceName: string;
+  SCM, Svc: SC_HANDLE;
+  Status: TServiceStatus;
+
+begin
+  Services := TServiceRepository.GetAllServices;
+  try
+    SCM := OpenSCManager(nil, nil, SC_MANAGER_CONNECT);
+    if SCM = 0 then
+      Exit;
+
+    try
+
+      for ServiceName in Services do
+      begin
+        Svc := OpenService(SCM, PChar(ServiceName), SERVICE_QUERY_STATUS);
+        if Svc = 0 then
+        begin
+          LogError('Serviço não encontrado: ' + ServiceName);
+          Continue;
+        end;
+
+        try
+          if QueryServiceStatus(Svc, Status) then
+          begin
+            var
+            HasIncident := TIncidentRepository.HasOpenIncident(ServiceName);
+
+            if Status.dwCurrentState <> SERVICE_RUNNING then
+            begin
+              // Serviço está parado
+              if not HasIncident then
+              begin
+                TApiClient.SendOpenIncident(ServiceName);
+                TIncidentRepository.OpenIncident(ServiceName);
+                MainForm.ReloadConfig;
+                Log('Chamado aberto para serviço parado: ' + ServiceName);
+              end;
+            end
+            else
+            begin
+              // Serviço está rodando
+              if HasIncident then
+              begin
+                TApiClient.SendCloseIncident(ServiceName);
+                TIncidentRepository.CloseIncident(ServiceName);
+                Log('Chamado encerrado para serviço normalizado: ' +
+                  ServiceName);
+              end;
+            end;
+          end;
+        finally
+          CloseServiceHandle(Svc);
+        end;
+
+      end;
+
+    finally
+      CloseServiceHandle(SCM);
+    end;
+  finally
+    Services.Free;
+  end;
+end;
+
+end.

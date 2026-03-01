@@ -19,7 +19,7 @@ uses
   ApiClient,
   IncidentRepository,
   Logger,
-  ESA.MainForm;
+  MainForm;
 
 { TServiceMonitor }
 
@@ -61,7 +61,7 @@ begin
               begin
                 TApiClient.SendOpenIncident(ServiceName);
                 TIncidentRepository.OpenIncident(ServiceName);
-                MainForm.ReloadConfig;
+                Form1.ReloadConfig;
                 Log('Chamado aberto para serviço parado: ' + ServiceName);
               end;
             end
